@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations in class</title>
+    <style>
+        .container{
+            background-color: aquamarine;
+            width: 60vw;
+            height: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            background-color: rgb(52, 122, 98);
+            width: 6vw;
+            height: 5vh;
+            /* animation-name: AryanKaAnimation;
+            animation-duration: 1s;
+            animation-timing-function: cubic-bezier(0.0, 0.0, 0.0, 0.715);
+            animation-delay: .5s;
+            animation-direction: alternate-reverse;
+            animation-play-state: inherit; */
+
+            /* This is the short hand for the animation */
+            animation: AryanKaAnimation 2s ease-in .4s infinite alternate-reverse , Aryan 2s ease-in .4s infinite alternate-reverse ;
+        }
+
+        @keyframes AryanKaAnimation {
+            from{
+                
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+        @keyframes Aryan {
+            50%{
+                color: red;
+                transform: scale(2);
+            }
+            100%{
+                animation: normal;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            Box
+        </div>
+    </div>
+</body>
+</html>

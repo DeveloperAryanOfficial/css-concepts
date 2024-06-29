@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css transform property</title>
+    <style>
+        .container{
+            height: 50vh;
+            width: 50vh;
+            border: 2px solid black;
+        }
+        .item{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            width: 50px;
+            background-color: brown;
+            /* To rotate the box */
+            /* transform: rotate(43deg); */
+            /* transform: rotate(0.25turn); It means 90deg turn */
+            /* transform: rotateX(50deg); */
+            /* transform: rotatey(50deg); */
+            /* transform: rotatez(50deg); */
+
+            /* To increase the size of the box */
+            /* transform: scale(1.2); scale means size of the box */
+            /* transform: scaleX(1.3); */
+            /* transform: scaley(1.3); */
+            /* transform:scaleZ(2); */
+            /* transform: scale3d(); */
+
+            /* Skew means strech the box according to axis */
+            /* transform: skew(50deg); */
+            /* transform: skewx(50deg); */
+            /* transform: skewy(50deg); */
+
+            /* Translate means set another place according to the axis */
+            /* transform: translate(34px); */
+            /* transform: translatey(34px); */
+            
+            /* When we want to use more than one transform property */
+            /* transform: translateX(200%) skewX(-23deg) rotate(45deg) translatey(78%); */
+
+            /* With the help of origin property we can set the center point of the box */
+            /* transform: rotate(45deg); */
+            /* transform-origin: 100% 0%; This is behave like in upper x axis*/
+            /* transform-origin: 100% 0%; This is behave like lower y axis*/
+            /* transform-origin: 0% 0%; This is the top corner point */
+
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">
+            Box
+        </div>
+    </div>
+</body>
+</html>

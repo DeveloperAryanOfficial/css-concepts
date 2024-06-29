@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+       :root{
+        --color : rgb(239, 32, 32);
+        --bgcolor : rgb(22, 255, 224);
+        --border-color : rgb(5, 142, 37);
+        --radius : 10px;
+        --border : 2px solid var(--border-color);
+       } 
+       nav{
+
+        color: var(--color);
+        background-color: var(--bgcolor);
+       }
+       nav ul{
+        display: flex;
+        justify-content: center;
+       }
+       nav ul li {
+        list-style: none;
+        padding: 10px;
+       }
+       .container{
+        
+    
+        margin-top: 10px;
+       }
+       a{
+        color: var(--color);
+        background-color: var(--bgcolor);
+        text-decoration: none;
+        border: var(--border);
+        border-radius: var(--radius);
+        padding: 2px 10px 2px 10px;
+       }
+
+    </style>
+</head>
+<body>
+
+    <div>
+        <nav class="navbar">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias autem tempore eos ab dolor ipsa eum nisi doloribus magni, accusamus debitis id asperiores harum incidunt et molestias perferendis quod inventore neque sapiente aspernatur obcaecati cum illum. Alias natus soluta quo perspiciatis velit odit, cupiditate saepe!
+    </div>
+    <div class="btn container">
+        <a href="#">Button</a>
+    </div>
+
+</body>
+</html>

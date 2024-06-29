@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARD</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            height: 100vh;
+            
+            background-color: lightgrey;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .card{
+            position: relative;
+            top: 100px;
+            left: 100px;
+            height: 60vh;
+            width: 40vw;
+            background-color: white;
+            border-radius: 15px;
+            padding: 15px;
+        }
+        .image img{
+            height: 185px;
+            border-radius: 10px;
+        }
+        .bullet span{
+            position: relative;
+            top: 8px;
+            border: 1px solid rgb(165, 164, 164);
+            border-radius: 50px;
+            padding: 0px 15px;
+            margin: 0px 5px;
+            font-size: small;
+            color: grey;
+        }
+        .content{
+            position: relative;
+            top: 15px;
+        }
+        .content p{
+            color: grey;
+        }
+        .btn a{
+            border-radius: 50px;
+            background-color: rgb(206, 231, 255);
+            padding: 5px 15px;
+            text-decoration: none;
+            position: relative;
+            top: 35px;
+            left: 70px;
+            color: rgb(33, 33, 255);
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+
+            <div class="image">
+                <img src="img/b.jpeg" alt="">
+            </div>
+
+            <div class="bullet">
+                <span class="keyword">Nature</span>
+                <span class="keyword">Lake</span>
+            </div>
+
+            <div class="content">
+                <h2>Lago di Braies</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est assumenda exercitationem illum fugit
+                    vero nam, voluptatem fugiat eligendi.</p>
+            </div>
+
+            <div class="btn">
+                <a href="#">Read More</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css object fit and object position</title>
+    <style>
+        .container{
+            height: 300px;
+            width: 300px;
+            border: 2px solid black;
+        }
+        img{
+            height: 300px;
+            width: 300px;
+            /* Cover value means cover the given height and width */
+            /* it split the image and provide fit image as your container */
+            object-fit: cover;
+            /* object-position: top right; */
+
+            /* IF you do not want to split your image */
+            /* It show full image with no split */
+            /* object-fit: contain; */
+            /* object-position: ; */
+
+            /* By default value of object fit */
+            /* object-fit: fill; */
+
+            /* object-fit: scale-down; */
+            
+
+            /* You can give distance in px to object position */
+            object-position: 12px 10px;
+ 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="img/h.jpg" alt="">
+    </div>
+</body>
+</html>

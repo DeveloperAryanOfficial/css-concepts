@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .box-1 {
+        margin: 10px;       
+        border: 10px solid black;
+        padding: 10px;
+        height: 50px;
+        /* 
+        Content-size of the element without using box-sizing property 
+        */
+
+    }
+    .box-2 {
+        margin: 10px;       
+        border: 10px solid black;
+        padding: 10px; 
+        box-sizing: border-box; /* If we use this then, */       
+        height:100px; /* Total height of the element without margin */
+
+        /*
+        100px = 2xborder + 2xpadding + content ;
+        */
+    }
+</style>
+
+<body>
+    <!-- 
+        BOX MODEL-- Includes four things these are
+
+        a.margin
+        b.border
+        c.padding
+        d.content
+
+        1. Content height includes border, padding, content in an any element.
+        2. Margin is the outer part of the element, but it is the part of the box model
+
+     -->
+
+     <!-- 
+        MARGIN COLLAPSE--
+
+        If margins of two elements are overlapping then maximum margin will execute once between elements 
+
+      -->
+
+
+    <div class="box-1">BOX-1</div>
+    <div class="box-2">BOX-2</div>
+
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display property</title>
+
+    <style>
+        *{ margin: 0; padding: 0;}
+
+        .container{
+            height: 30vh;
+            border: 2px solid green;
+        }
+        /* For the first condition */
+        .box-1{
+            border: 2px solid black;
+            display: inline; 
+            /* This value does not accept mt, width or pt */
+            width: 200px;
+            margin: 23px;
+            padding: 23px;
+        }
+
+
+        /* For the second condition */
+        .box-2{
+            border: 2px solid blue;
+            display: inline-block;
+            /* This value accepts mt, width or pt */
+            width: 200px;
+            margin: 23px;
+            padding: 23px;
+        }
+
+
+        /* For the third condition */
+        .box-3{
+            border: 2px solid blue;
+            display: inline-block;
+            /* This value accepts mt, width or pt */
+            width: 200px;
+            margin: 23px;
+            padding: 23px;
+            /* display: none; */
+            visibility: hidden;
+        }
+        .box-4{
+            border: 2px solid blue;
+            display: inline-block;
+            /* This value accepts mt, width or pt */
+            width: 200px;
+            margin: 23px;
+            padding: 23px;
+            
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box-1">Box-1</div>
+    </div>
+    <div class="container">
+        <div class="box-2">Box-2</div>
+    </div>
+    <div class="container">
+        <div class="box-3">Box-1</div>
+        <div class="box-4">Box-2</div>
+    </div>
+
+</body>
+
+</html>

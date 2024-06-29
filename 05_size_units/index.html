@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sizing in css</title>
+    <style>
+        /* 
+            px -> screen resolution
+            vw -> width of the total width of the screen
+            vh -> height of the total height of the screen 
+            em -> em times of its parent size by inherit
+            rem -> rem times of its root elements
+            Vmin -> in computer it means vh reverse in mobiles
+            Vmax -> in computer it means vw reverse in mobiles
+            min-width -> set according your need but maximum width have no limits
+            min-height -> set according your need but maximum height have no limits 
+        */
+
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            border: 2px solid black;
+            margin: auto;
+            margin-top: 20vh;
+            height: 50vh;
+            width: 20vw;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="container">
+            hello everyone
+        </div>
+    </div>
+</body>
+
+</html>
